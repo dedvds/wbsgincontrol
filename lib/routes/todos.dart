@@ -1,4 +1,4 @@
-import 'package:demo_todo_with_flutter/utilities.dart';
+import 'package:todonotes/utilities.dart';
 import 'package:flutter/material.dart';
 
 import '../entities/todo.dart';
@@ -56,6 +56,7 @@ class _TodosState extends State<Todos> {
       });
     } catch (e) {
       messenger.showSnackBar(createErrorSnackBar(e.toString()));
+      print(e);
     } finally {
       setState(() {
         isLoading = false;
@@ -97,7 +98,7 @@ class _TodosState extends State<Todos> {
             ),
           ),
           Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Center(
                 child: Text(
@@ -108,7 +109,7 @@ class _TodosState extends State<Todos> {
               const SizedBox(height: spacing),
               Center(
                 child: Text(
-                  "toTooooDoooos",
+                  "To Do",
                   style: headlineStyle,
                 ),
               ),

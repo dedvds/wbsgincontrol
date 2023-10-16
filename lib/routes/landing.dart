@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
-import '../widgets/animated_icon_button.dart';
 import 'auth.dart';
 
 class Landing extends StatelessWidget {
@@ -23,32 +21,7 @@ class Landing extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(
-            bottom: spacing,
-            right: spacing,
-            child: Row(
-              children: const [
-                AnimatedIconButton(
-                  url: 'https://github.com/appwrite/appwrite',
-                  assetName: 'assets/github.svg',
-                  semanticsLabel: 'GitHub Logo',
-                ),
-                SizedBox(width: spacing / 2),
-                AnimatedIconButton(
-                  url: 'https://twitter.com/appwrite_io',
-                  assetName: 'assets/twitter.svg',
-                  semanticsLabel: 'Twitter Logo',
-                ),
-                SizedBox(width: spacing / 2),
-                AnimatedIconButton(
-                  url: 'http://appwrite.io',
-                  assetName: 'assets/appwrite.svg',
-                  semanticsLabel: 'Appwrite Logo',
-                ),
-              ],
-            ),
-          ),
-          Column(
+             Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Center(
@@ -60,7 +33,7 @@ class Landing extends StatelessWidget {
               const SizedBox(height: spacing),
               Center(
                 child: Text(
-                  "toTooooDoooo",
+                  "WBSG in Control",
                   style: headlineStyle,
                 ),
               ),
@@ -69,24 +42,8 @@ class Landing extends StatelessWidget {
                 textAlign: TextAlign.center,
                 text: TextSpan(
                   style: textStyle,
-                  children: [
-                    const TextSpan(text: 'A Simple To-do App built with '),
-                    WidgetSpan(
-                      child: SvgPicture.asset(
-                        'assets/appwrite.svg',
-                        semanticsLabel: 'Appwrite Logo',
-                        height: 30,
-                      ),
-                    ),
-                    const TextSpan(text: ' Appwrite and '),
-                    WidgetSpan(
-                      child: SvgPicture.asset(
-                        'assets/flutter.svg',
-                        semanticsLabel: 'Flutter Logo',
-                        height: 25,
-                      ),
-                    ),
-                    const TextSpan(text: ' Flutter'),
+                  children: const [
+                    TextSpan(text: 'A Simple App to keep track of todos, groceries and plans')
                   ],
                 ),
               ),

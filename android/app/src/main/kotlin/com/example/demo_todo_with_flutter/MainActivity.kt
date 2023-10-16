@@ -1,4 +1,4 @@
-package io.appwrite.demo_todo_with_flutter
+package wbsg.todoapp
 
 import io.flutter.embedding.android.FlutterActivity
 

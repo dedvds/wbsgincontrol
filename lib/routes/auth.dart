@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../services/auth.dart';
+import 'homepage.dart';
 import '../utilities.dart';
-import 'todos.dart';
 
 class Auth extends StatefulWidget {
   const Auth({Key? key}) : super(key: key);
@@ -49,7 +49,7 @@ class _AuthState extends State<Auth> {
         passwordController.clear();
       }
       navigator.push(
-        MaterialPageRoute(builder: (context) => const Todos()),
+        MaterialPageRoute(builder: (context) => const HomePage()),
       );
     } catch (e) {
       messenger.showSnackBar(createErrorSnackBar(e.toString()));
