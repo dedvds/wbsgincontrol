@@ -52,7 +52,7 @@ class Landing extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Auth()),
+                    MaterialPageRoute(builder: (context) =>  const Auth()),
                   );
                 },
                 child: const Text('Get Started'),

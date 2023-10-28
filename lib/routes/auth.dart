@@ -17,12 +17,14 @@ class _AuthState extends State<Auth> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   bool isSignUp = false;
+  bool isloggedin= false;
 
   void toggleSignUp() {
     setState(() {
       isSignUp = !isSignUp;
     });
   }
+
 
   void submit() async {
     final navigator = Navigator.of(context);

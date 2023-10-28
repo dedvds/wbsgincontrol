@@ -125,7 +125,7 @@ class _GroceriesState extends State<Groceries> {
                         borderSide: BorderSide.none,
                       ),
                       focusedBorder: const OutlineInputBorder(),
-                      hintText: '🤔   What to do today?',
+                      hintText: '🤔   Need some stuff?',
                       contentPadding: const EdgeInsets.only(left: 20),
                       suffixIcon: IconButton(
                         onPressed: submitGrocery,

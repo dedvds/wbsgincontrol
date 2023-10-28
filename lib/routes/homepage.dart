@@ -32,7 +32,6 @@ class _HomePageState extends State<HomePage> {
         ),
   
       resizeToAvoidBottomInset : false,
-
       bottomNavigationBar: FlashyTabBar(
         selectedIndex: _selectedIndex,
         onItemSelected: (index) => setState(() {

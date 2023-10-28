@@ -125,7 +125,7 @@ class _PlansState extends State<Plans> {
                         borderSide: BorderSide.none,
                       ),
                       focusedBorder: const OutlineInputBorder(),
-                      hintText: '🤔   What to do today?',
+                      hintText: '🤔   Got a new plan?',
                       contentPadding: const EdgeInsets.only(left: 20),
                       suffixIcon: IconButton(
                         onPressed: submitPlan,

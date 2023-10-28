@@ -5,6 +5,8 @@ import '../services/appwrite.dart';
 
 class AuthService {
   final Account _account = Account(Appwrite.instance.client);
+  
+
 
   Future<models.Account> signUp(
       {String? name, required String email, required String password}) async {
